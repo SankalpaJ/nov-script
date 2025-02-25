@@ -15,3 +15,10 @@ let greet3 = (name)=> {
     return 'Hello,${name}'
 }
 console.log(greet3('Abhi'))
+
+// demo 
+function greet(name) {
+    return 'Hello, ${name}!';
+}
+console.log(greet("Alice"));
+console.log(greet("Bob"));
