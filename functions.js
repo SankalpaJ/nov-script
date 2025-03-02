@@ -1,4 +1,5 @@
 // 4 types of functions
+
 // 1. Function w/o input & w/o return
  function add() {
     var a = 10;

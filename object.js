@@ -18,6 +18,6 @@ const s1 = {
     Percentage: ['Sem-I: 76', 'Sem-II: 80', 'Sem-III: 85'],
     Performance: ()=> console.log('Good'),
 }
-// console.log(s1, typeof s1);                   // Results complete dictnory as o/p
+console.log(s1, typeof s1);                   // Results complete dictnory as o/p
 console.log(s1.Name, s1.Age, s1.Fees_paid);     // for specific data as o/p
 console.log(s1.Name,": Marks of Maths: ", s1.Marks.Maths);

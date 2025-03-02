@@ -1,11 +1,11 @@
-// function Declaration: 
+// function Declaration:-----
 
 function add(a,b){
     console.log(a+b);
 }
 add(100,200);
 
-// function expession 
+// function expession:------
 // here function() r block z completly assigned to sub variable, 
 //  so insted of console.log we can directly we call sub().....
 const sub = function(a,b) {
@@ -13,7 +13,7 @@ const sub = function(a,b) {
 }
 sub(100, 20);
 
-// Arrow function 
+// Arrow function:-------
 
 const mul = (a,b) => {
     console.log(a * b);
