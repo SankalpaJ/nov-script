@@ -9,4 +9,4 @@ console.log(array.map((ele) => ele * ele));     // [ 100, 121, 4, 16, 9 ]
 
 // reduce
 console.log(array.reduce((acc,ele) => acc * ele, 1));    // 2640
-console.log(array.reduce((acc,ele) => acc + ele, 0));
+console.log(array.reduce((acc,ele) => acc + ele, 0));    // 30
