@@ -26,3 +26,25 @@ console.log(a);       // 500
 console.log(a);          // Reference Error  
 const a = 500;
 console.log(a);         // 500
+
+// functions: Hoisted
+// the function declartions are hoisted at the top of its decln..
+// bcz hositing func declarn can be called before its implementation...
+add();
+function add() {
+    console.add(10 + 20);
+}                   // 30
+
+// examples:---------
+
+console.log(a); // error
+const a = 30; // at d time of MA it will be in TDZ but at d time of CE it is assigned with 30
+console.log(a);  // 30
+console.log(b);  // Error
+let b = 60;
+console.log(b);
+console.log(c);
+var c = 40;
+console.log(d);
+
+

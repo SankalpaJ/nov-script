@@ -25,7 +25,7 @@
 //         break;
 //     default:
 //         console.log("Just another day..");
-// }
+//     }
 
 // for loop:---------
 // for(var i = 0; i <= 5; i++){
@@ -78,4 +78,4 @@ for(let i = 0; i <= 5; i++){
         continue;
     }
     console.log(i);   
-}                          // 0 1 2 4 5 ['3' will be sikkped]
+}                          // 0 1 2 4 5 ['3' will be sikpped]
