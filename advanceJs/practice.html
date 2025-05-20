@@ -1,0 +1,49 @@
+<!-- Requirements to solve:----
+   1) WAP to display addition of num (nums will be passed to a func
+          as an argument at the time of calling of func.)
+    for e.g: add(10,20), add(50,60,40), add(), add(10)
+
+    2) WAP to find sum of array ele using reduce(); & explain it.
+
+    3) Mention func names for below opr:-
+        a) Add ele at d "end" of an array -----         push()
+        b) Removes ele from d 0th index   -----         shift()
+        c) Creating sub array w/o changing original array -- slice()
+        d) Checking index of specific ele value         ---- indexOf()
+        e) Checking wther ele is present in an array or not --- includes()
+
+    4) define lexical scope & explain it with d help of  ex.
+ 
+-->
+<!-- Answers 
+        click on "Go Live" -> console-> & get o/p 
+-->
+<script>
+// 1)
+       var add = (...args)=> {
+        if(args.length === 0) {
+            console.log("Invaild arguments...")
+        }
+        else {
+            var res = reduce((acc, ele) => acc + ele, 0)
+            console.log("Addition is: ", res);
+        }
+       }
+    add();              // Invaild args
+    add(10, 20);        // Addition is: 30   
+    add(10,30,10);      // Addition is: 50
+    add(1,2,3,4,5,6);   // Addition is: 21
+</script>
+---------------------------------------------------------------------------
+
+<script>
+// 2)
+    var arr = [10,20,30,40,50];
+    var sum = arr.reduce(function(acc, ele){
+        acc = acc + ele;
+        return acc;
+    }, 0)
+    console.log('Sum is: ', sum);
+</script>
+------------------------------------------------------------------------------------------
+
