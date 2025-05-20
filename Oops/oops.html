@@ -1,0 +1,43 @@
+<!--
+1) Every Object belongs to a class.
+2) Class doesn't exist in real world but Object exist.
+    ex: Car Obj z exist but its blueprint not exist..
+3) Every Object having "Has" part (properties) & "Does" part (func/ Methods)
+-------------------------------------------------------------------------------------
+1) constructor z a spl method that will be called every time whenever we are creating an Object....
+2) used to intital Obj properties.
+3) same name as cls name but doesn't return type.
+4) keyword => "constructor()"........
+-->
+
+<script>
+    class Student {
+        constructor(s_name, s_age, s_email) {
+            // instance variables
+            this.name = s_name
+            this.age = s_age
+            this.email = s_email
+        }
+        // does part (instance methods)
+        eat() {
+            console.log(this.name, 'is eating...');
+        }
+
+        learn() {
+            console.log(this.name, 'is learning......');
+        }
+    }
+// Creating Obj for Student cls & calling its  constrctor (has part)
+    // Accessing  instance variables
+    s1 = new Student('Akash', 25, 'ak@kod.com');
+    console.log(s1.name, s1.age, s1.email);   // Akash 2 ak@kod.com
+    // invoking instance method
+    s1.eat();                                 // Akash is  eating...
+
+    s2 = new Student('Ankint', 26, 'ank@kod.com');
+    console.log(s2.name, s2.age, s2.email);     // Ankith 2 ank@kod.com
+    s2.learn();                                 // Ankith is learnig.....
+    s2.eat();                                   // Ankith is eating...
+
+
+</script>
