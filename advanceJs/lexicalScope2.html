@@ -1,0 +1,17 @@
+<script>
+    var g = 'Global';
+    function Outer() {
+        var ot = 'Outer';
+        console.log(g);   // Global
+        console.log(ot);  // Outer
+    
+        function inner() {
+            var i = 'Inner';
+            console.log(i);   // Inner
+            console.log(g);   // Global
+            console.log(ot);  // Outer
+        }
+        inner();
+    }
+    Outer();
+</script>

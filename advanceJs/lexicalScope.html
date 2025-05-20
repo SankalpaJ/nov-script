@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lexical Scope</title>
+</head>
+<body>
+    <script>
+        var global = 200;
+            console.log("Value of global is: ", global); // 200
+            // console.log("Value of outer is: ", outer);  // Error
+            // console.log("Value of inner is: ", inner);  // Error
+        function Outer() {
+            var outer = 300;
+            console.log("Value of global is: ", global);  // 200
+            console.log("Value of outer is: ", outer);    // 300
+           // console.log("Value of inner is: ", inner);    // Error
+        function Inner(){
+            var inner = 400;
+            console.log("Value of global is: ", global);   // 200
+            console.log("Value of outer is: ", outer);     // 300
+            console.log("Value of inner is: ", inner);     // 400
+        }
+        Inner();
+        }
+        Outer();
+
+        /* Lexical Scope = Parent Scope
+        In Lexical Scope always "child scope" as a reference var of "parent"
+             and parent var as reference of "Null" 
+            Therefore "Child scope" always having access of its parent scope properties
+            bcz in every scope we will be having use of "Reference var" which will be  
+            pointing towards its parent scope....
+                types: 1) Global
+                       2) Local
+                       3) Block --- declr using "let" or "const"
+            Lexical evrnt:-- z a structure that JS uses keep track of all var & func available at any point..
+
+        */
+    </script>
+</body>
+</html>

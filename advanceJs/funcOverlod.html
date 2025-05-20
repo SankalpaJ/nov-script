@@ -1,0 +1,16 @@
+<script>
+    function mul(a,b){
+        console.log('Multily of a, b is:', a * b);
+    }
+    function mul(a, b, c){
+        console.log('Multily of a, b, c is:', a * b * c);
+    }
+    mul(10, 20);   // Multily of a, b is: NaN
+    mul(10, 20, 30);  // Multily of a, b, c is: 6000
+
+    /* JS do not support func overloading bcz when we try to
+        declare multiple funcs with same name but d/f num of 
+        parameters, then only last declared func can be accessed
+        and all other previous funcs will become useless.
+    */
+</script>
